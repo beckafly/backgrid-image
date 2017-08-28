@@ -22,7 +22,8 @@
 	var ImageCell = Backgrid.Extension.ImageCell = Backbone.View.extend({
 
 		/** @property */
-		className: "image-cell",
+		className: "image-cell renderable",
+		tagName: "td",
 
 
 		/** Renders an image in a table cell. */
