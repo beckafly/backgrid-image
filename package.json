@@ -1,6 +1,6 @@
 {
   "name": "backgrid-image",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Backgrid image cell extention",
   "main": "index.js",
   "scripts": {
