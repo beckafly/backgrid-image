@@ -19,7 +19,7 @@
 
 	"use strict";
 
-	var ImageCell = Backgrid.Extention.ImageCell = Backbone.View.extend({
+	var ImageCell = Backgrid.Extension.ImageCell = Backbone.View.extend({
 
 		/** @property */
 		className: "image-cell",
