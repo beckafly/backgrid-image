@@ -7,19 +7,19 @@
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(["backbone", "backgrid", "underscore"], factory);
+    define(["backbone", "backgrid"], factory);
   } else if (typeof exports == "object") {
     // CommonJS
-    module.exports = factory(require("backbone"), require("backgrid"), require("underscore"));
+    module.exports = factory(require("backbone"), require("backgrid"));
   }
   // Browser
-  else factory(root.Backbone, root.Backgrid, root._);
+  else factory(root.Backbone, root.Backgrid);
 
-}(this, function (Backbone, Backgrid, _) {
+}(this, function (Backbone, Backgrid) {
 
 	"use strict";
 
-	var ImageCell = Backgrid.Extension.ImageCell = Backbone.View.extend({
+	var ImageCell = exports.ImageCell = Backgrid.Extension.ImageCell = Backbone.View.extend({
 
 		/** @property */
 		className: "image-cell renderable",
@@ -41,4 +41,6 @@
 		}
 
 	});
+
+	return exports;
 }));
