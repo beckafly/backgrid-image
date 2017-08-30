@@ -37,7 +37,7 @@
 
 		make_image_src: function(model) {
 			var img_src = this.model.get("img_src");
-			return typeof img_src === "string" ? '<img src="' + img_src + '" width="50" alt="" />' : "no image avalable";
+			return typeof img_src === "string" ? '<img src="' + img_src + '" width="50" alt="" />' : "No image avalable";
 		}
 
 	});

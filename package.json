@@ -1,6 +1,6 @@
 {
   "name": "backgrid-image",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Backgrid image cell extention",
   "main": "index.js",
   "scripts": {
@@ -15,12 +15,17 @@
     "image",
     "cell",
     "backbone",
-    "module"
+    "module",
+    "AMD",
+    "CommonJS",
+    "Browser",
+    "image cell"
 
   ],
   "dependencies": {
   "backbone": "^1.2.3",
-  "backgrid": "^0.3.7"
+  "backgrid": "^0.3.7",
+  "underscore": "^1.8.3"
   },
   "author": "Alex Becker",
   "license": "MIT",
